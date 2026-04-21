@@ -5,29 +5,29 @@ import Image from "next/image";
 // span balise texte , avec css dans class name
 
 export default function Home() {
-  return (
+  return ( 
     <div className="flex flex-col flex-1 items-center justify-center bg-[#0a0f1e] font-sans">
       <main className="flex flex-1 w-full flex-col items-center justify-between py-32 px-0 bg-[#0a0f1e] text-center font-space-grotesk">
-        <Image
-          src="/posidonie.jpg"  
-          alt="Posidonie"
-          width={1000}
-          height={500}
-          priority
-        />
-        <br></br>
-        <br></br>
-        <br></br>
+{/* Container for logo and text side by side */}
+        <div className="flex items-center gap-8">
+          <Image
+            src="/logo_alma.png"  
+            alt="Posidonie"
+            width={200}
+            height={500}
+            priority
+          />
+          
+          <div className="flex flex-col items-start gap-2 text-left">
+            <h1 className="text-4xl font-bold leading-10 tracking-tight text-[#a8d5f7] font-space-grotesk">
+              Grenier Marin 
+            </h1>
+            <h1 className="text-3xl font-bold leading-10 tracking-tight text-[#4a9ede] font-space-grotesk">
+              Sanctuaire de Posidonie en Méditerranée 
+            </h1>
+          </div>
+        </div>
 
-        <div className="flex flex-col items-center gap-6 text-center w-full font-space-grotesk"></div>
-          <h1 className="text-3xl font-bold leading-10 tracking-tight text-[#4a9ede] font-space-grotesk">
-                    
-            Grenier Marin 
-            <br></br>
-            Sanctuaire de Posidonie en Méditerranée 
-
-
-          </h1>
           <br></br>
           <br></br>
           <br></br>
@@ -44,7 +44,7 @@ export default function Home() {
             </p>
             <br></br>
 
-            <div className="bg-white/5 rounded-lg p-6 mt-8">
+            <div className="bg-white/5 rounded-lg p-6 mt-8 text-center">
               <h2 className="text-2xl font-bold text-[#4a9ede] mb-4">Nos propositions pour la protéger</h2>
               <ul className="text-left space-y-3 max-w-2xl mx-auto">
                 <li>🚫 <span className="font-medium">Mouillage responsable</span> - Interdiction d'ancrage sur les herbiers (Zone ZMEL)</li>
@@ -54,9 +54,8 @@ export default function Home() {
                 <li>🔬 <span className="font-medium">Recherche</span> - Accueil d'associations marines (Miraceti)</li>
               </ul>
             </div>
-            <br></br>
 
-          <p className="max-w-2xl text-lg leading-8 text-slate-300">
+          <div className=" rounded-lg p-6 mt-8 text-lg leading-8 text-slate-300 text-center">
             Tu t'intéresses aux fonds marins et aux animaux qui y habitent? Viens nous aider à protéger les herbiers de posidonie! <br></br>
             Pour en savoir plus, tu peux aller lire nos recherches sur les {" "}
             <a
@@ -73,7 +72,7 @@ export default function Home() {
               Nos objectifs 2026 ()
             </a>{" "}
             - pages encore en construction.
-          </p>
+          </div>
           <Image
             src="/maps.png"  
             alt="Maps"
@@ -124,12 +123,11 @@ export default function Home() {
       </main>
       <br></br>
       <Image
-          src="/seaweed_logo.svg"  
+          src="/logo_alma.png"  
           alt="Logo"
-          width={1000}
+          width={500}
           height={500}
           priority
-          className="invert"
         />
     </div>
     
