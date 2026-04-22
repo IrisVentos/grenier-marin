@@ -96,22 +96,15 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#4a9ede] px-5 text-white transition-colors hover:bg-[#3a8ece] md:w-[158px]"
+            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#4a9ede] px-5 text-white transition-colors hover:border-transparent hover:bg-white/10 md:w-[158px]"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              className="invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
             Calendrier
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full px-5 text-white transition-colors hover:border-transparent hover:bg-white/10 md:w-[158px]"
+            className="flex h-12 w-full items-center justify-center rounded-full px-5 bg-[#4a9ede] text-white transition-colors hover:border-transparent hover:bg-white/10 md:w-[158px]"
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -128,6 +121,11 @@ export default function Home() {
           height={500}
           priority
         />
+        <br></br>
+        <br></br>
+        <p className="text-l text-[#808080] font-medium">
+              Saint-Cyr sur Mer, 83270
+            </p>
     </div>
     
   );
