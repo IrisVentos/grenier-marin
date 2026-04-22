@@ -121,11 +121,10 @@ export default function Home() {
           
         </div>
       </main>
-      <br></br>
       <Image
           src="/logo_alma.png"  
-          alt="Logo"
-          width={500}
+          alt="logo"
+          width={200}
           height={500}
           priority
         />
