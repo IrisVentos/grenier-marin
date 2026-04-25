@@ -36,7 +36,7 @@ export default function Home() {
             <p className="text-xl text-white font-medium">
               Notre but?
               <br></br>
-              Créer une zone de 200 hectares d'herbier protégé entre la Madrague et la Pointe Fauconnier.
+              Créer une zone de 200 hectares d'herbier protégé entre la Madrague et la Pointe Fauconnière.
             </p>
             
             <p>
