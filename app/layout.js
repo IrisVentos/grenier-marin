@@ -1,5 +1,7 @@
 import { Outfit, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import Navbar from './components/Navbar';
+import Image from "next/image";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -18,15 +20,16 @@ export const metadata = {
   description: "Root URL for AMP Project",
 };
 
+
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="fr"
-      className={`${outfit.variable} ${spaceGrotesk.variable} h-full antialiased`}
-    >
+    <html lang="fr" className={`${outfit.variable} ${spaceGrotesk.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-[#0a0f1e] text-white font-outfit">
-        {children}
+          <div className="relative z-10 flex flex-col flex-1" />
+          <Navbar />
+          {children}
       </body>
     </html>
   );
 }
+

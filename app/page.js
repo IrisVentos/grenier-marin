@@ -1,11 +1,11 @@
 // Welcome page
 
 import Image from "next/image";
+import Link from "next/link";
 
 // span balise texte , avec css dans class name
-
 export default function Home() {
-  return ( 
+  return (
     <div className="flex flex-col flex-1 items-center justify-center bg-[#0a0f1e] font-sans">
       <main className="flex flex-1 w-full flex-col items-center justify-between py-32 px-0 bg-[#0a0f1e] text-center font-space-grotesk">
 {/* Container for logo and text side by side */}
@@ -34,13 +34,18 @@ export default function Home() {
 
           <div className="max-w-3xl space-y-6 text-lg leading-relaxed text-slate-300">
             <p className="text-xl text-white font-medium">
-              30 hectares d'herbier protégé entre la Madrague et la Pointe Grenier.
+              Notre but?
+              <br></br>
+              Créer une zone de 200 hectares d'herbier protégé entre la Madrague et la Pointe Fauconnier.
             </p>
             
             <p>
               La Posidonie est le <span className="text-[#4a9ede] font-semibold">poumon de la Méditerranée</span>, 
-              abritant 25% des espèces marines. Elle lutte contre l'érosion des côtes, produit de l'oxygène et capture le CO2.
-              Mais cette belle plante est arrachée par les ancres, polluée et affaiblie par la pêche et le surtourisme. 
+              abritant 25% des espèces marines. 
+              <br></br>
+              Elle lutte contre l'érosion des côtes, produit de l'oxygène et capture le CO2.
+              <br></br>
+              Mais cette belle plante est victime des activités humaines : arrachée par les ancres, polluée et affaiblie par le réchauffement climatique et le surtourisme. 
             </p>
             <br></br>
 
@@ -56,22 +61,24 @@ export default function Home() {
             </div>
 
           <div className=" rounded-lg p-6 mt-8 text-lg leading-8 text-slate-300 text-center">
-            Tu t'intéresses aux fonds marins et aux animaux qui y habitent? Viens nous aider à protéger les herbiers de posidonie! <br></br>
+            Tu t'intéresses aux fonds marins et aux animaux qui y habitent? 
+            <br></br>
+            Viens nous aider à protéger les herbiers de posidonie! <br></br>
             Pour en savoir plus, tu peux aller lire nos recherches sur les {" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-white"
+            <Link
+              href="/menaces"
+              className="font-medium text-white underline"
             >
-              Enjeux & Menaces
-            </a>{" "}
-            ou nous aider à accomplir nos {" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-white"
+              Menaces
+            </Link>{" "}
+            qui guettent la posidonie ou nous aider à accomplir nos {" "}
+            <Link
+              href="/calendrier"
+              className="font-medium text-white underline"
             >
-              Nos objectifs 2026 ()
-            </a>{" "}
-            - pages encore en construction.
+              Objectifs 2026
+            </Link>{" "}
+            .
           </div>
           <Image
             src="/maps.png"  
@@ -95,23 +102,18 @@ export default function Home() {
           <br></br>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
+          <Link
             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#4a9ede] px-5 text-white transition-colors hover:border-transparent hover:bg-white/10 md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/calendrier"
           >
             Calendrier
-          </a>
-          <a
+          </Link>
+          <Link
             className="flex h-12 w-full items-center justify-center rounded-full px-5 bg-[#4a9ede] text-white transition-colors hover:border-transparent hover:bg-white/10 md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/references"
           >
-            Documentation
-          </a>
-          
+            Références
+          </Link>
         </div>
       </main>
       <Image
@@ -123,11 +125,11 @@ export default function Home() {
         />
         <br></br>
         <br></br>
+        <br></br>
         <p className="text-l text-[#808080] font-medium">
-              Saint-Cyr sur Mer, 83270
+              Saint-Cyr sur Mer - 83270
             </p>
     </div>
     
   );
 }
-
