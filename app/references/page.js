@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const references = [
   {
-    emoji: "📖",
+    emoji: "",
     type: "Livre",
     title: "La révolution des algues",
     author: "Vincent Doumeizel",
@@ -15,7 +15,7 @@ const references = [
     link: null,
   },
   {
-    emoji: "🏛️",
+    emoji: "",
     type: "Institution",
     title: "Office Français de la Biodiversité",
     author: "ofb.gouv.fr",
@@ -23,7 +23,7 @@ const references = [
     link: "https://ofb.gouv.fr/actualites/sauver-les-herbiers-de-posidonies",
   },
   {
-    emoji: "🌊",
+    emoji: "",
     type: "Article",
     title: "Les services rendus par la posidonie",
     author: "bandol-littoral.org",
@@ -31,7 +31,7 @@ const references = [
     link: "https://bandol-littoral.org/posidonie-etat-des-lieux/",
   },
   {
-    emoji: "🧭",
+    emoji: "",
     type: "Etude marketing",
     title: "Rapport IUCN : Un tourisme raisonné et durable",
     author: "iucn.org",
@@ -39,7 +39,7 @@ const references = [
     link: "https://iucn.org/sites/default/files/2023-06/nature-oriented-destination-marketing_fr_compressed.pdf",
   },
   {
-    emoji: "🔬",
+    emoji: "",
     type: "Étude scientifique",
     title: "Surveillance de la posidonie",
     author: "Sartoretto et al. — Conseil Régional PACA & Ifremer",
@@ -47,7 +47,7 @@ const references = [
     link: "http://cartocean.fr/biblio/Sartoretto_et_al_2009.pdf",
   },
   {
-    emoji: "🐋",
+    emoji: "",
     type: "Association",
     title: "Plaisanciers et herbiers : quelle réglementation ?",
     author: "wwf.fr",
@@ -55,7 +55,7 @@ const references = [
     link: "https://www.wwf.fr/especes-prioritaires/posidonie",
   },
   {
-    emoji: "🌿",
+    emoji: "",
     type: "Article",
     title: "La posidonie, réservoir de biodiversité",
     author: "naturdive.com",
@@ -63,7 +63,7 @@ const references = [
     link: "https://naturdive.com/actions/la-posidonie-un-reservoir-de-biodiversite/",
   },
   {
-    emoji: "⚖️",
+    emoji: "",
     type: "Article",
     title: "Le coût écosystémique de l'herbier",
     author: "ici.fr",
@@ -71,7 +71,7 @@ const references = [
     link: "https://www.ici.fr/infos/environnement/destruction-des-herbiers-de-posidonie-a-marseille-le-prejudice-ecologique-chiffre-devant-la-justice-4216209",
   },
   {
-    emoji: "📱",
+    emoji: "",
     type: "Application",
     title: "Donia — Visualiser les fonds sensibles",
     author: "donia.fr",
@@ -79,7 +79,7 @@ const references = [
     link: "https://donia.fr/",
   },
   {
-    emoji: "📜",
+    emoji: "",
     type: "Arrêté préfectoral",
     title: "Protéger plutôt que restaurer",
     author: "Préfecture maritime de Méditerranée",
@@ -87,7 +87,7 @@ const references = [
     link: "https://www.premar-mediterranee.gouv.fr/uploads/mediterranee/arretes/73e018b2c8cedc104133643ae6e2c1ae.pdf",
   },
   {
-    emoji: "🏄",
+    emoji: "",
     type: "Association",
     title: "Surfrider Foundation",
     author: "surfrider.fr",

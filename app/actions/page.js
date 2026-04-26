@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const actions = [
   {
-    emoji: "⚖️",
+    emoji: "",
     title: "Le cadre légal",
     color: "#f6ca46",
     tag: "Depuis 1988",
@@ -18,7 +18,7 @@ const actions = [
     ),
   },
   {
-    emoji: "⚓",
+    emoji: "",
     title: "Mouiller responsable",
     color: "#4a9ede",
     tag: "Action immédiate",
@@ -61,7 +61,7 @@ const actions = [
     ),
   },
   {
-    emoji: "🌱",
+    emoji: "",
     title: "Restaurer les herbiers",
     color: "#4ade80",
     tag: "Long terme",
@@ -75,7 +75,7 @@ const actions = [
     ),
   },
   {
-    emoji: "📚",
+    emoji: "",
     title: "Éduquer et sensibiliser",
     color: "#f59e0b",
     tag: "Transmission",
@@ -89,7 +89,7 @@ const actions = [
     ),
   },
   {
-    emoji: "♻️",
+    emoji: "",
     title: "Agir contre la pollution",
     color: "#4ade80",
     tag: "Chaque geste compte",
@@ -143,7 +143,7 @@ export default function ActionsPage() {
         {/* Intro banner */}
         <div className="w-full rounded-2xl bg-gradient-to-r from-[#4a9ede]/20 to-[#4ade80]/10 border border-[#4a9ede]/30 p-8 mb-16 text-center">
           <p className="text-xl text-white font-medium leading-relaxed">
-            🌊 La posidonie est en danger — mais elle peut être sauvée.<br />
+            La posidonie est en danger — mais elle peut être sauvée.<br />
             <span className="text-[#4ade80]">Voici ce que chacun peut faire, dès aujourd'hui.</span>
           </p>
         </div>
@@ -188,7 +188,7 @@ export default function ActionsPage() {
 
         {/* Call to action */}
         <div className="w-full bg-gradient-to-r from-[#4ade80]/10 to-[#4a9ede]/10 border border-[#4ade80]/30 rounded-2xl p-10 text-center">
-          <h3 className="text-2xl font-bold text-[#4ade80] mb-4">Ensemble, on peut changer les choses. 🌿</h3>
+          <h3 className="text-2xl font-bold text-[#4a9ede] mb-4">Ensemble, on peut changer les choses. </h3>
           <p className="text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto">
             Rejoignez nos actions de terrain, participez à une collecte, ou partagez simplement 
             cette page autour de vous. Chaque geste compte pour les herbiers de demain.

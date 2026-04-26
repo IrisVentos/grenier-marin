@@ -52,11 +52,11 @@ export default function Home() {
             <div className="bg-white/5 rounded-lg p-6 mt-8 text-center">
               <h2 className="text-2xl font-bold text-[#4a9ede] mb-4">Nos propositions pour la protéger</h2>
               <ul className="text-left space-y-3 max-w-2xl mx-auto">
-                <li>🚫 <span className="font-medium">Mouillage responsable</span> - Interdiction d'ancrage sur les herbiers (Zone ZMEL)</li>
-                <li>📚 <span className="font-medium">Éducation</span> - Sensibilisation dans les écoles de Saint-Cyr</li>
-                <li>🤿 <span className="font-medium">Découverte</span> - Chemin de snorkeling balisé</li>
-                <li>♻️ <span className="font-medium">Dépollution</span> - Collectes  de déchets littorales organisées</li>
-                <li>🔬 <span className="font-medium">Recherche</span> - Accueil d'associations marines (Miraceti)</li>
+                <li> <span className="font-medium">Mouillage responsable</span> - Interdiction d'ancrage sur les herbiers (Zone ZMEL)</li>
+                <li> <span className="font-medium">Éducation</span> - Sensibilisation dans les écoles de Saint-Cyr</li>
+                <li> <span className="font-medium">Découverte</span> - Chemin de snorkeling balisé</li>
+                <li> <span className="font-medium">Dépollution</span> - Collectes  de déchets littorales organisées</li>
+                <li> <span className="font-medium">Recherche</span> - Accueil d'associations marines (Miraceti)</li>
               </ul>
             </div>
 

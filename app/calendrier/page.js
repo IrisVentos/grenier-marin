@@ -8,7 +8,7 @@ const upcomingEvents = [
   {
     category: "Sensibilisation",
     categoryColor: "#4a9ede",
-    emoji: "🎤",
+    emoji: "",
     date: "9 mai 2026",
     title: "Conférence sur la Posidonie",
     description: "Conférence menée par Philippe et Iris sur la Posidonie, pour l'association RPT (Rassemblement pour la Transition Écologique et Solidaire).",
@@ -19,7 +19,7 @@ const upcomingEvents = [
   {
     category: "Sensibilisation",
     categoryColor: "#4a9ede",
-    emoji: "🏛️",
+    emoji: "",
     date: "2026",
     title: "RDV avec le Conservatoire du Littoral",
     description: "Rencontre à planifier avec le Conservatoire du Littoral pour discussion sur la protection des herbiers.",
@@ -29,7 +29,7 @@ const upcomingEvents = [
   {
     category: "Sensibilisation",
     categoryColor: "#4a9ede",
-    emoji: "🤿",
+    emoji: "",
     date: "2026",
     title: "Partenariat avec Azur Plongée",
     description: "Appui discuté avec le club de plongée Azur Plongée pour sensibilisation des plongeurs locaux.",
@@ -40,7 +40,7 @@ const upcomingEvents = [
   {
     category: "Campagne nettoyage",
     categoryColor: "#4ade80",
-    emoji: "♻️",
+    emoji: "",
     date: "2026",
     title: "Collecte littorale avec Surfrider Foundation",
     description: "Organisation d'une campagne de nettoyage du littoral en partenariat avec Surfrider Foundation.",
@@ -51,7 +51,7 @@ const upcomingEvents = [
   {
     category: "Écoles & Éducation",
     categoryColor: "#f59e0b",
-    emoji: "📚",
+    emoji: "",
     date: "2026",
     title: "Projets pédagogiques",
     description: "Actions de sensibilisation dans les écoles de Saint-Cyr-sur-Mer. Détails à venir.",
@@ -62,7 +62,7 @@ const upcomingEvents = [
 
 const stateOfPlay = [
   {
-    emoji: "🎬",
+    emoji: "",
     title: "Vidéo sous-marine de la zone",
     description: "Exploration filmée des herbiers de la zone Grenier Marin.",
     link: null, // replace with actual URL when available
@@ -73,25 +73,25 @@ const stateOfPlay = [
 const pastEvents = [
   {
     date: "15 oct. 2025",
-    emoji: "🏛️",
+    emoji: "",
     title: "Réunion à la mairie",
     description: "Réunion tenue à la mairie avec Arthur et Valentin Gauthier (garde du parc Natura 2000).",
   },
   {
     date: "22 oct. 2025 & 10 fév. 2026",
-    emoji: "🤝",
+    emoji: "",
     title: "Rencontres liste Y. Maubé",
     description: "Contact à entretenir avec Dominique Hocquet, adjoint en charge des ports et du littoral.",
   },
   {
     date: "24 oct. 2025 & 2 mars 2026",
-    emoji: "🤝",
+    emoji: "",
     title: "Rencontres liste Luciano",
     description: "Contact à entretenir avec Alain, responsable nautisme à la mairie.",
   },
   {
     date: "2026",
-    emoji: "🤝",
+    emoji: "",
     title: "Discussion avec Luciano Oddone (liste Mme Sama)",
     description: "Échanges autour d'une ferme aquacole, d'une maison de la mer et d'un projet de nurserie à poissons — pas de meilleure nurserie que l'herbier !",
   },
