@@ -22,7 +22,7 @@ export default function Menaces() {
               Grenier Marin
             </h1>
             <h2 className="text-3xl font-bold leading-10 tracking-tight text-[#4a9ede] font-space-grotesk">
-              Les menaces qui pèsent sur la Posidonie et les conséquences
+              Les menaces qui pèsent sur la Posidonie... et sur nous
             </h2>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function Menaces() {
  
         {/* Section 1 */}
         <div className="w-full mb-16 border-l-4 border-[#4a9ede] pl-8">
-          <h3 className="text-xl font-bold text-[#a8d5f7] mb-4">🏗️ L'urbanisation étouffe les herbiers</h3>
+          <h3 className="text-xl font-bold text-[#a8d5f7] mb-4">L'urbanisation étouffe les herbiers</h3>
           <p className="text-slate-300 leading-relaxed">
             Ports, digues, rechargements de plage, retrait des banquettes : les aménagements côtiers augmentent 
             la turbidité de l'eau et privent les posidonies de lumière, indispensable à leur photosynthèse. 
@@ -86,7 +86,7 @@ export default function Menaces() {
  
         {/* Section 2 */}
         <div className="w-full mb-16 border-l-4 border-[#e05a5a] pl-8">
-          <h3 className="text-xl font-bold text-[#a8d5f7] mb-4">⚓ La plaisance, première menace directe</h3>
+          <h3 className="text-xl font-bold text-[#a8d5f7] mb-4">La plaisance, première menace directe</h3>
           <p className="text-slate-300 leading-relaxed mb-6">
             1 000 à 1 500 hectares détruits chaque année en France par les ancres et mouillages. 
             Une ancre détruit plusieurs m² en quelques secondes. La repousse ? 10 à 15 ans. 
@@ -119,10 +119,10 @@ export default function Menaces() {
  
         {/* Section 3 */}
         <div className="w-full mb-16 border-l-4 border-[#4a9ede] pl-8">
-          <h3 className="text-xl font-bold text-[#a8d5f7] mb-4">🧪 Des pollutions de toutes origines</h3>
+          <h3 className="text-xl font-bold text-[#a8d5f7] mb-4">Des pollutions de toutes origines</h3>
           <p className="text-slate-300 leading-relaxed mb-6">
             500 tonnes de microplastiques flottent en Méditerranée. 80 % de la pollution marine vient de la terre : 
-            pesticides, engrais, crèmes solaires (parabènes). Les herbiers filtrent tout... jusqu'à saturation.
+            pesticides, engrais, crèmes solaires (parabènes). Sans oublier la pollution sonore des moteurs. Les herbiers filtrent tout... jusqu'à saturation.
           </p>
           <div className="flex-col flex gap-4 flex-wrap">
             <Image
@@ -140,7 +140,7 @@ export default function Menaces() {
  
         {/* Section 4 */}
         <div className="w-full mb-16 border-l-4 border-[#e05a5a] pl-8">
-          <h3 className="text-xl font-bold text-[#a8d5f7] mb-4">🌡️ Le changement climatique et les algues invasives</h3>
+          <h3 className="text-xl font-bold text-[#a8d5f7] mb-4">Le changement climatique et les algues invasives</h3>
           <p className="text-slate-300 leading-relaxed">
             Réchauffement, acidification des océans, modification de la salinité : la posidonie, plante sensible 
             car proche de la surface, perd ses conditions de vie idéales. Deux algues tropicales introduites 
@@ -153,7 +153,14 @@ export default function Menaces() {
         <div className="w-full bg-white/5 border border-[#e05a5a]/40 rounded-xl p-8 text-center max-w-3xl mx-auto">
           <p className="text-lg text-slate-200 leading-relaxed font-medium">
             Résultat : une <span className="text-[#e05a5a] font-bold">fragilisation cumulative</span>. 
-            Le constat est fait. Les actions doivent suivre.
+            <br></br>
+            Les actions doivent suivre. Les nôtres détaillées          
+            <Link
+              href="/calendrier"
+              className="font-medium text-white underline ml-2"
+            >
+            ici !
+            </Link>{" "}
           </p>
         </div>
  

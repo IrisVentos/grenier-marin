@@ -71,12 +71,12 @@ export default function Home() {
             >
               Menaces
             </Link>{" "}
-            qui guettent la posidonie ou nous aider à accomplir nos {" "}
+            qui guettent la posidonie ou t'engager sur des {" "}
             <Link
               href="/calendrier"
               className="font-medium text-white underline"
             >
-              Objectifs 2026
+              Actions citoyennes
             </Link>{" "}
             .
           </div>
