@@ -181,7 +181,8 @@ export default function ActionsPage() {
                   </span>
                 </div>
               </div>
-              <p className="text-slate-300 leading-relaxed">{action.content}</p>
+              <p className="text-slate-300 leading-relaxed">{action.content}
+              </p>
             </div>
           ))}
         </div>
