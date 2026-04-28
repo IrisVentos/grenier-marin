@@ -92,10 +92,11 @@ export default function Home() {
             Contacts :
           </p>
           <ul className="max-w-2xl text-lg leading-8 text-slate-300 list-disc list-inside space-y-2">
-            <li>Porteur du projet : Philippe Ventos — phil2.ventos@gmail.com</li>
+            <li>Porteur du projet : Philippe Ventos — philippe.ventos@club-internet.fr </li>
             <li>Conseil en biodiversité marine : Iris Ventos</li>
             <li>Photographe plongeur : Philippe Cortes</li>
             <li>Communication et aide au projet : Delphine Rousseau-Ventos</li>
+            <li>Graphisme & design : Alma Ventos</li>
           </ul>
           
           <br></br>
