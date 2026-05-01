@@ -1,7 +1,7 @@
 // app/actions/page.js
 
 import Image from "next/image";
-import Link from "next/link";
+import BottomNav from "../components/BottomNav";
 
 const actions = [
   {
@@ -194,20 +194,10 @@ export default function ActionsPage() {
             Rejoignez nos actions de terrain, participez à une collecte, ou partagez simplement 
             cette page autour de vous. Chaque geste compte pour les herbiers de demain.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Link
-              href="/calendrier"
-              className="px-8 py-3 rounded-full bg-[#4a9ede] text-white font-semibold hover:bg-[#4a9ede]/80 transition-colors"
-            >
-              Voir le calendrier des actions
-            </Link>
-            <Link
-              href="/"
-              className="px-8 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-colors"
-            >
-              Retour à l'accueil
-            </Link>
-          </div>
+          <BottomNav
+            primary={{ href: "/calendrier", label: "Voir le calendrier des actions" }}
+            secondary={{ href: "/", label: "Retour à l'accueil" }}
+          />
         </div>
 
       </main>
