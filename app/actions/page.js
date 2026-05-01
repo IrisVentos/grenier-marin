@@ -122,10 +122,10 @@ export default function ActionsPage() {
         {/* Header */}
         <div className="flex items-center gap-8 mb-6 w-full">
           <Image
-            src="/logo_alma.png"
+            src="/logo_alma.svg"
             alt="Logo"
             width={200}
-            height={500}
+            height={200}
             priority
           />
           <div className="flex flex-col items-start gap-2 text-left">

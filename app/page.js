@@ -11,10 +11,10 @@ export default function Home() {
 {/* Container for logo and text side by side */}
         <div className="flex items-center gap-8">
           <Image
-            src="/logo_alma.png"  
+            src="/logo_alma.svg"
             alt="Posidonie"
             width={200}
-            height={500}
+            height={200}
             priority
           />
           
@@ -118,10 +118,10 @@ export default function Home() {
         </div>
       </main>
       <Image
-          src="/logo_alma.png"  
+          src="/logo_alma.svg"
           alt="logo"
           width={200}
-          height={500}
+          height={200}
           priority
         />
         <br></br>
