@@ -34,7 +34,15 @@ export default function Home() {
               Mais cette belle plante est victime des activités humaines : arrachée par les ancres, polluée et affaiblie par le réchauffement climatique et le surtourisme. 
             </p>
             <br></br>
-
+            <div className="flex justify-center">
+          <Image
+            src="/map_france.png"
+            alt="Maps large"
+            width={400}
+            height={300}
+            priority
+          />
+        </div> 
             <div className="bg-white/5 rounded-lg p-6 mt-8 text-center">
               <h2 className="text-2xl font-bold text-[#4a9ede] mb-4">Nos propositions pour la protéger</h2>
               <ul className="text-left space-y-3 max-w-2xl mx-auto">
@@ -66,13 +74,15 @@ export default function Home() {
             </Link>{" "}
             .
           </div>
+        <div className="flex justify-center">
           <Image
-            src="/maps.png"  
+            src="/maps.png"
             alt="Maps"
-            width={1500}
+            width={600}
             height={300}
             priority
-        />
+          />
+        </div>
           <br></br>
           <p className="font-medium text-white max-w-2xl text-lg leading-8">
             Contacts :
