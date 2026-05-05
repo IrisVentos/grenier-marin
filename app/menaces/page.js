@@ -2,30 +2,14 @@
  
 import Image from "next/image";
 import Link from "next/link";
- 
+import PageHeader from "../components/PageHeader";
+
 export default function Menaces() {
   return (
     <div className="flex flex-col flex-1 items-center bg-[#0a0f1e] font-sans text-white">
       <main className="flex flex-1 w-full flex-col items-center py-24 px-6 max-w-5xl mx-auto">
- 
-        {/* Header: logo + title */}
-        <div className="flex items-center gap-8 mb-16 w-full">
-          <Image
-            src="/logo_alma.png"
-            alt="Posidonie"
-            width={200}
-            height={500}
-            priority
-          />
-          <div className="flex flex-col items-start gap-2 text-left">
-            <h1 className="text-4xl font-bold leading-10 tracking-tight text-[#a8d5f7] font-space-grotesk">
-              Grenier Marin
-            </h1>
-            <h2 className="text-3xl font-bold leading-10 tracking-tight text-[#4a9ede] font-space-grotesk">
-              Les menaces qui pèsent sur la Posidonie... et sur nous
-            </h2>
-          </div>
-        </div>
+
+        <PageHeader subtitle="Les menaces qui pèsent sur la Posidonie... et sur nous" />
  
         {/* Key figures */}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
