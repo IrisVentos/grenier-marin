@@ -1,7 +1,11 @@
 // app/calendrier/page.js
 
+
 import Image from "next/image";
 import BottomNav from "../components/BottomNav";
+import Link from "next/link";
+import PageHeader from "../components/PageHeader";
+
 
 const upcomingEvents = [
   // --- SENSIBILISATION ---
@@ -110,14 +114,7 @@ export default function CalendrierPage() {
     <div className="flex flex-col flex-1 items-center bg-[#0a0f1e] font-sans text-white min-h-screen">
       <main className="flex flex-1 w-full flex-col items-center py-24 px-6 max-w-5xl mx-auto">
 
-        {/* Header */}
-        <div className="flex items-center gap-8 mb-16 w-full">
-          <Image src="/logo_alma.png" alt="Logo" width={200} height={500} priority />
-          <div className="flex flex-col items-start gap-2 text-left">
-            <h1 className="text-4xl font-bold leading-10 tracking-tight text-[#a8d5f7] font-space-grotesk">Grenier Marin</h1>
-            <h2 className="text-3xl font-bold text-[#4a9ede] font-space-grotesk">Calendrier des actions</h2>
-          </div>
-        </div>
+        <PageHeader subtitle="Calendrier des actions" />
 
         {/* ── UPCOMING EVENTS ── */}
         <section className="w-full mb-20">
