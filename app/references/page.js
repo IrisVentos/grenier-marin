@@ -2,6 +2,8 @@
 
 // app/references/page.js
 
+import Image from "next/image";
+import BottomNav from "../components/BottomNav";
 import Link from "next/link";
 import PageHeader from "../components/PageHeader";
 
@@ -135,17 +137,11 @@ export default function ReferencesPage() {
           ))}
         </ul>
 
-        {/* Bottom nav */}
-        <div className="flex gap-4 justify-center flex-wrap mt-20">
-          <Link href="/actions"
-            className="px-8 py-3 rounded-full bg-[#4a9ede] text-white font-semibold hover:bg-[#4a9ede]/80 transition-colors">
-            Nos actions
-          </Link>
-          <Link href="/"
-            className="px-8 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-colors">
-            Retour à l'accueil
-          </Link>
-        </div>
+        <BottomNav
+          primary={{ href: "/actions", label: "Nos actions" }}
+          secondary={{ href: "/", label: "Retour à l'accueil" }}
+          className="flex gap-4 justify-center flex-wrap mt-20"
+        />
 
       </main>
     </div>
