@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import PageHeader from "../components/PageHeader";
 
 const actions = [
   {
@@ -119,24 +120,10 @@ export default function ActionsPage() {
     <div className="flex flex-col flex-1 items-center bg-[#0a0f1e] font-sans text-white min-h-screen">
       <main className="flex flex-1 w-full flex-col items-center py-24 px-6 max-w-5xl mx-auto">
 
-        {/* Header */}
-        <div className="flex items-center gap-8 mb-6 w-full">
-          <Image
-            src="/logo_alma.svg"
-            alt="Logo"
-            width={200}
-            height={200}
-            priority
-          />
-          <div className="flex flex-col items-start gap-2 text-left">
-            <h1 className="text-4xl font-bold leading-10 tracking-tight text-[#a8d5f7] font-space-grotesk">
-              Grenier Marin
-            </h1>
-            <h2 className="text-3xl font-bold leading-10 tracking-tight text-[#4a9ede] font-space-grotesk">
-              Comment protéger la Posidonie ?
-            </h2>
-          </div>
-        </div>
+        <PageHeader
+          subtitle="Comment protéger la Posidonie ?"
+          className="flex items-center gap-8 mb-6 w-full"
+        />
         <br></br>
         <br></br>
 
@@ -181,8 +168,9 @@ export default function ActionsPage() {
                   </span>
                 </div>
               </div>
-              <p className="text-slate-300 leading-relaxed">{action.content}
-              </p>
+              <div className="text-slate-300 leading-relaxed">
+                {action.content}
+              </div>
             </div>
           ))}
         </div>

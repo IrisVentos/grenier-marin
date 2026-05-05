@@ -2,31 +2,17 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import PageHeader from "./components/PageHeader";
 
 // span balise texte , avec css dans class name
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-[#0a0f1e] font-sans">
       <main className="flex flex-1 w-full flex-col items-center justify-between py-32 px-0 bg-[#0a0f1e] text-center font-space-grotesk">
-{/* Container for logo and text side by side */}
-        <div className="flex items-center gap-8">
-          <Image
-            src="/logo_alma.svg"
-            alt="Posidonie"
-            width={200}
-            height={200}
-            priority
-          />
-          
-          <div className="flex flex-col items-start gap-2 text-left">
-            <h1 className="text-4xl font-bold leading-10 tracking-tight text-[#a8d5f7] font-space-grotesk">
-              Grenier Marin 
-            </h1>
-            <h1 className="text-3xl font-bold leading-10 tracking-tight text-[#4a9ede] font-space-grotesk">
-              Sanctuaire de Posidonie en Méditerranée 
-            </h1>
-          </div>
-        </div>
+        <PageHeader
+          subtitle="Sanctuaire de Posidonie en Méditerranée"
+          className="flex items-center gap-8"
+        />
 
           <br></br>
           <br></br>
