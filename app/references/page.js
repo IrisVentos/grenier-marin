@@ -2,8 +2,8 @@
 
 // app/references/page.js
 
-import Image from "next/image";
 import Link from "next/link";
+import PageHeader from "../components/PageHeader";
 
 const references = [
   {
@@ -101,14 +101,7 @@ export default function ReferencesPage() {
     <div className="flex flex-col flex-1 items-center bg-[#0a0f1e] font-sans text-white min-h-screen">
       <main className="flex flex-1 w-full flex-col items-center py-24 px-6 max-w-3xl mx-auto">
 
-        {/* Header */}
-        <div className="flex items-center gap-8 mb-16 w-full">
-          <Image src="/logo_alma.png" alt="Logo" width={200} height={500} priority />
-          <div className="flex flex-col items-start gap-2 text-left">
-            <h1 className="text-4xl font-bold leading-10 tracking-tight text-[#a8d5f7] font-space-grotesk">Grenier Marin</h1>
-            <h2 className="text-3xl font-bold leading-10 tracking-tight text-[#4a9ede] font-space-grotesk">Références & Sources</h2>
-          </div>
-        </div>
+        <PageHeader subtitle="Références & Sources" />
 
         {/* Intro */}
         <p className="w-full text-[#7ab8e8] leading-relaxed text-base italic mb-16">
