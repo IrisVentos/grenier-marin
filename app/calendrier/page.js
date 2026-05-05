@@ -1,7 +1,11 @@
 // app/calendrier/page.js
 
+
+import Image from "next/image";
+import BottomNav from "../components/BottomNav";
 import Link from "next/link";
 import PageHeader from "../components/PageHeader";
+
 
 const upcomingEvents = [
   // --- SENSIBILISATION ---
@@ -201,17 +205,10 @@ export default function CalendrierPage() {
           </div>
         </section>
 
-        {/* Bottom nav */}
-        <div className="flex gap-4 justify-center flex-wrap">
-          <Link href="/actions"
-            className="px-8 py-3 rounded-full bg-[#4a9ede] text-white font-semibold hover:bg-[#4a9ede]/80 transition-colors">
-            Nos actions
-          </Link>
-          <Link href="/"
-            className="px-8 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-colors">
-            Retour à l'accueil
-          </Link>
-        </div>
+        <BottomNav
+          primary={{ href: "/actions", label: "Nos actions" }}
+          secondary={{ href: "/", label: "Retour à l'accueil" }}
+        />
 
       </main>
     </div>
