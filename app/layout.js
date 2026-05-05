@@ -1,7 +1,7 @@
 import { Outfit, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from './components/Navbar';
-import Image from "next/image";
+import Footer from './components/Footer';
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
           <div className="relative z-10 flex flex-col flex-1" />
           <Navbar />
           {children}
+          <Footer />
       </body>
     </html>
   );
