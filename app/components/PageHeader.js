@@ -4,10 +4,10 @@ export default function PageHeader({ subtitle, className = "flex items-center ga
   return (
     <div className={className}>
       <Image
-        src="/logo_alma.png"
+        src="/logo_alma.svg"
         alt="Logo Grenier Marin"
         width={200}
-        height={500}
+        height={200}
         priority
       />
       <div className="flex flex-col items-start gap-2 text-left">

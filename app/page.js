@@ -104,10 +104,10 @@ export default function Home() {
         </div>
       </main>
       <Image
-          src="/logo_alma.png"  
+          src="/logo_alma.svg"
           alt="logo"
           width={200}
-          height={500}
+          height={200}
           priority
         />
         <br></br>
