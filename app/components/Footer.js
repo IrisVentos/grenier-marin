@@ -9,10 +9,9 @@ const projet = [
 
 const participer = [
   { href: "/calendrier", label: "Calendrier" },
-  { href: "/#contact", label: "Nous rejoindre" },
   {
     href: "mailto:philippe.ventos@club-internet.fr?subject=Grenier%20Marin%20%E2%80%94%20Contact",
-    label: "Écrire à l'association",
+    label: "Écrire à Grenier Marin",
     external: true,
   },
 ];
@@ -34,7 +33,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="leading-relaxed max-w-[36ch]">
-              Sanctuaire de Posidonie en Méditerranée. Baie de Saint-Cyr sur Mer.
+              Sanctuaire de Posidonie en Méditerranée. Baie de Saint-Cyr-sur-Mer.
             </p>
           </div>
 
@@ -44,7 +43,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-wrap items-center justify-between gap-3 pt-6 border-t border-white/5 font-mono text-[10px] tracking-[0.16em] uppercase text-slate-500">
-          <span>© {new Date().getFullYear()} Grenier Marin · Saint-Cyr sur Mer</span>
+          <span>© {new Date().getFullYear()} Grenier Marin · Saint-Cyr-sur-Mer</span>
           <span>43°10′N · 5°41′E</span>
         </div>
       </div>

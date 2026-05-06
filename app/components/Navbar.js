@@ -35,7 +35,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 flex items-center justify-between px-4 sm:px-8 py-4 border-b border-white/10 bg-[#0a0f1e]/90 backdrop-blur-md">
+      <nav className="sticky top-0 z-50 flex items-center justify-between px-4 sm:px-8 py-4 border-b border-white/10 backdrop-blur-md">
         <Link href="/" className="font-bold text-base sm:text-lg tracking-tight">
           Projet Grenier Marin
         </Link>
