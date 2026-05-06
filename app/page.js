@@ -8,8 +8,10 @@ import InteractiveMap from "./components/InteractiveMap";
 // span balise texte , avec css dans class name
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-[#0a0f1e] font-sans">
-      <main className="flex flex-1 w-full flex-col items-center pt-16 pb-0 px-0 bg-[#0a0f1e] text-center font-space-grotesk">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans relative">
+      <div aria-hidden className="sunrays" />
+      <div aria-hidden className="caustics" />
+      <main className="relative z-10 flex flex-1 w-full flex-col items-center pt-16 pb-0 px-0 text-center font-space-grotesk">
         <PageHeader
           subtitle="Sanctuaire de Posidonie en Méditerranée"
           className="flex items-center gap-8"

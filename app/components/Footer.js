@@ -23,7 +23,7 @@ const ressources = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[#0a0f1e] text-slate-400 text-sm">
+    <footer className="relative z-10 border-t border-white/10 bg-[#0a0f1e] text-slate-400 text-sm">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid grid-cols-2 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-10 md:gap-12 mb-12">
           <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
