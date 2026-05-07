@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={`${outfit.variable} ${spaceGrotesk.variable} h-full antialiased`}>
       <head>
-        <link rel='icon' type='image/x-icon' href='logo_alma.png' ></link>
+        <link rel='icon' type='image/x-icon' href='logo_alma.svg' ></link>
       </head>
       <body className="min-h-full flex flex-col bg-[#0a0f1e] text-white font-outfit">
           <div className="relative z-10 flex flex-col flex-1" />
