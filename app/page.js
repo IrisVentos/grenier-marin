@@ -165,7 +165,7 @@ export default function Home() {
     {[
       { name: "Philippe Ventos",          role: "Porteur du projet",          image: "/philippe-ventos.jpg" },
       { name: "Iris Ventos",              role: "Conseil biodiversité marine", image: "/iris-ventos.jpg" },
-      { name: "Philippe Cortes",          role: "Photographe plongeur",        image: "/philippe-cortes.jpg" },
+      { name: "Philippe Cortes",          role: "Plongeur - Photographe sous-marin, Bruno Receveur",        image: "/philippe-cortes.jpg" },
       { name: "Delphine Rousseau-Ventos", role: "Communication",               image: "/delphine-rousseau-ventos.jpg" },
       { name: "Alma Ventos",              role: "Graphisme & design",          image: "/alma-ventos.jpeg" },
     ].map((m) => (
