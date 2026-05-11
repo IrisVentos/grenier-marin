@@ -34,3 +34,128 @@ body {
   font-family: var(--font-outfit), sans-serif;
 }
 
+/* Underwater background — sunrays + caustics (home only) */
+.sunrays {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 80% at 50% -10%,
+      oklch(0.55 0.06 220 / .35) 0%,
+      oklch(0.40 0.07 225 / .18) 25%,
+      oklch(0.25 0.07 235 / .06) 55%,
+      transparent 80%),
+    linear-gradient(180deg,
+      oklch(0.25 0.07 230) 0%,
+      oklch(0.20 0.07 235) 25%,
+      oklch(0.15 0.065 240) 55%,
+      #0a0f1e 100%);
+}
+.sunrays::before,
+.sunrays::after {
+  content: "";
+  position: absolute;
+  left: -20%;
+  right: -20%;
+  top: -20%;
+  bottom: -15%;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  transform-origin: 50% 0%;
+  will-change: transform;
+}
+.sunrays::before {
+  background-image:
+    linear-gradient(98deg, transparent 0 18%, oklch(36.82% 0.03815 177.599 / 0.22) 19%, oklch(38.358% 0.04328 177.525 / 0.04) 24%, transparent 26% 100%),
+    linear-gradient(102deg, transparent 0 32%, oklch(41.784% 0.0411 181.873 / 0.14) 33%, transparent 38% 100%),
+    linear-gradient(94deg, transparent 0 46%, oklch(39.685% 0.04559 176.413 / 0.28) 47%, oklch(40.726% 0.04642 176.897 / 0.06) 52%, transparent 54% 100%),
+    linear-gradient(106deg, transparent 0 60%, oklch(37.317% 0.04225 181.653 / 0.12) 61%, transparent 66% 100%),
+    linear-gradient(96deg, transparent 0 72%, oklch(38.25% 0.04506 178.169 / 0.2) 73%, oklch(35.691% 0.03823 177.447 / 0.04) 78%, transparent 80% 100%),
+    linear-gradient(100deg, transparent 0 84%, oklch(37.206% 0.03806 182.85 / 0.16) 85%, transparent 90% 100%);
+  filter: blur(14px);
+  animation: sway-rays 20s ease-in-out infinite alternate;
+}
+.sunrays::after {
+  background-image:
+    linear-gradient(95deg, transparent 0 12%, oklch(42.681% 0.06725 157.172 / 0.18) 13%, transparent 14% 100%),
+    linear-gradient(100deg, transparent 0 28%, rgba(37, 83, 61, 0.12) 29%, transparent 30% 100%),
+    linear-gradient(92deg, transparent 0 41%, oklch(42.433% 0.08393 160.03 / 0.22) 42%, transparent 43% 100%),
+    linear-gradient(104deg, transparent 0 55%, oklch(40.726% 0.0895 151.69 / 0.14) 56%, transparent 57% 100%),
+    linear-gradient(96deg, transparent 0 68%, oklch(42.71% 0.08627 150.359 / 0.16) 69%, transparent 70% 100%),
+    linear-gradient(101deg, transparent 0 81%, oklch(38.61% 0.07821 146.868 / 0.12) 82%, transparent 83% 100%),
+    linear-gradient(97deg, transparent 0 92%, oklch(0.99 0.02 95 / .18) 93%, transparent 94% 100%);
+  filter: blur(2px);
+  animation: sway-rays 20s ease-in-out infinite alternate-reverse;
+}
+.caustics {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(2px 8px at 12% 22%, oklch(0.99 0.02 95 / .18), transparent 60%),
+    radial-gradient(1.5px 6px at 28% 14%, oklch(0.99 0.02 95 / .14), transparent 60%),
+    radial-gradient(2px 7px at 44% 18%, oklch(0.99 0.02 95 / .20), transparent 60%),
+    radial-gradient(1.5px 5px at 62% 11%, oklch(0.99 0.02 95 / .12), transparent 60%),
+    radial-gradient(2.5px 9px at 78% 24%, oklch(0.99 0.02 95 / .16), transparent 60%),
+    radial-gradient(1.5px 6px at 92% 16%, oklch(0.99 0.02 95 / .14), transparent 60%);
+  mix-blend-mode: screen;
+  animation: caustics-drift 24s linear infinite;
+  will-change: transform;
+}
+@keyframes sway-rays {
+  0%   { transform: translateX(-2%) rotate(-1deg) scaleY(1); }
+  50%  { transform: translateX(2%)  rotate(1deg)  scaleY(1.05); }
+  100% { transform: translateX(-1%) rotate(-0.5deg) scaleY(1); }
+}
+@keyframes caustics-drift {
+  0%   { transform: translate3d(0,0,0); opacity: .85; }
+  50%  { transform: translate3d(-2%, 1%, 0); opacity: 1; }
+  100% { transform: translate3d(0,0,0); opacity: .85; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sunrays::before, .sunrays::after, .caustics { animation: none; }
+}
+
+/* Leaflet — light theme overrides */
+.gm-map-label {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(30, 58, 138, 0.25);
+  color: #1e3a8a;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.08);
+}
+.gm-map-label::before {
+  display: none;
+}
+.leaflet-container {
+  background: #f1f5f9;
+  font-family: var(--font-outfit), sans-serif;
+}
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.7) !important;
+  color: #64748b !important;
+  font-size: 9px !important;
+  padding: 1px 6px !important;
+}
+.leaflet-control-attribution a {
+  color: #1e3a8a !important;
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid rgba(30, 58, 138, 0.2);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+}
+.leaflet-popup-content {
+  font-size: 13px;
+  margin: 10px 14px;
+}
+

@@ -11,10 +11,10 @@ export default function PageHeader({ subtitle, className = "flex items-center ga
         priority
       />
       <div className="flex flex-col items-start gap-2 text-left">
-        <h1 className="text-4xl font-bold leading-10 tracking-tight text-[#a8d5f7] font-space-grotesk">
+        <h1 className="text-4xl font-bold leading-10 tracking-tight text-[#bedaf0] font-space-grotesk">
           Grenier Marin
         </h1>
-        <h2 className="text-3xl font-bold leading-10 tracking-tight text-[#4a9ede] font-space-grotesk">
+        <h2 className="text-3xl font-bold leading-10 tracking-tight text-[#8cc6f3] font-space-grotesk">
           {subtitle}
         </h2>
       </div>
